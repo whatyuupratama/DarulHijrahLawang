@@ -31,7 +31,7 @@ const FooterSection: React.FC = () => {
             loading='lazy'
             allowFullScreen
             referrerPolicy='no-referrer-when-downgrade'
-            className='min-w-[300px] lg:min-w-[400px]'
+            className='w-full min-w-0 lg:min-w-[400px]'
           />
         </div>
       </div>

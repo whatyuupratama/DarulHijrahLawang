@@ -14,8 +14,8 @@ const ContactSection: React.FC = () => {
             description='Semua jalur komunikasi diarahkan ke Ust. Mada agar informasi santri tersinkron langsung dengan laptop beliau.'
           />
         </AnimatedReveal>
-        <div className='mt-12 grid gap-8 md:grid-cols-[1.2fr_1fr]'>
-          <AnimatedReveal className='rounded-3xl border border-slate-200 bg-slate-50/60 p-8 shadow-[0_25px_60px_rgba(148,163,184,0.18)]'>
+        <div className='mt-12 grid grid-cols-1 gap-8 md:grid-cols-[1.2fr_1fr]'>
+          <AnimatedReveal className='w-full rounded-3xl border border-slate-200 bg-slate-50/60 p-6 shadow-[0_25px_60px_rgba(148,163,184,0.18)] sm:p-8'>
             <h3 className='text-lg font-semibold text-slate-900'>
               Hubungi Langsung
             </h3>
@@ -90,7 +90,7 @@ const ContactSection: React.FC = () => {
             </div>
           </AnimatedReveal>
           <AnimatedReveal
-            className='relative overflow-hidden rounded-3xl bg-linear-to-br from-sky-400 via-sky-500 to-sky-600 p-8 text-white shadow-[0_35px_80px_rgba(2,132,199,0.35)]'
+            className='relative w-full overflow-hidden rounded-3xl bg-linear-to-br  from-sky-400 via-sky-500 to-sky-600 p-6 text-white shadow-[0_35px_80px_rgba(2,132,199,0.35)] sm:p-8'
             delay={120}
           >
             <div className='absolute -right-12 top-10 h-24 w-24 rounded-full bg-white/20 blur-2xl' />
@@ -98,14 +98,14 @@ const ContactSection: React.FC = () => {
               <p className='text-sm font-semibold uppercase tracking-[0.3em] text-white/75'>
                 Reminder
               </p>
-              <h3 className='text-2xl font-semibold text-white'>
+              <h3 className='text-xl font-semibold leading-snug text-white sm:text-2xl'>
                 Mohon konfirmasi data santri setelah mengisi formulir.
               </h3>
-              <p className='text-sm text-white/80'>
+              <p className='text-sm text-white/80 sm:text-base/relaxed'>
                 Ust. Mada akan mengarsipkan data langsung di laptop resmi pondok
                 dan menghubungi kembali untuk verifikasi.
               </p>
-              <p className='text-sm text-white/80'>
+              <p className='text-sm text-white/80 sm:text-base/relaxed'>
                 Simpan nomor resmi dan jangan bagikan data santri ke pihak
                 selain kontak ini.
               </p>
