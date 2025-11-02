@@ -14,8 +14,8 @@ export const heroContent = {
     href: 'https://wa.me/62895624820033?text=Assalamualaikum%20Ust.%20Mada%2C%20saya%20ingin%20mendaftar%20santri%20baru',
   },
   secondaryCta: {
-    label: 'Jadwalkan Kunjungan',
-    href: 'tel:+62895624820033',
+    label: 'Unduh Booklet',
+    href: '/brosur-ppdb-darul-hijrah-2026.pdf',
   },
   highlight:
     'Konfirmasi langsung ke Ust. Mada untuk memastikan data pendaftaran diterima.',

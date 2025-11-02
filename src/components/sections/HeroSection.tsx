@@ -1,9 +1,16 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import { heroContent, siteBrand } from '@/data/siteContent';
 import AnimatedReveal from '@/components/ui/AnimatedReveal';
 import WorldMap from '@/components/ui/world-map';
 
+const handleDownload = () => {
+  const link = document.createElement('a');
+  link.href = '/brosur-ppdb-darul-hijrah-2026.pdf';
+  link.download = '/brosur-ppdb-darul-hijrah-2026.pdf';
+  link.click();
+};
 const mapConnections = [
   {
     start: { lat: -7.9181, lng: 112.708, label: 'Lawang' },
@@ -72,13 +79,16 @@ const HeroSection: React.FC = () => {
                 <span className='relative inline-flex h-2 w-2 rounded-full bg-sky-500' />
               </span>
             </a>
-            <a
-              href={heroContent.secondaryCta.href}
-              className='inline-flex items-center justify-center gap-3 rounded-2xl bg-white/10 px-6 py-3 text-base font-semibold text-white ring-1 ring-white/30 transition-colors duration-300 hover:bg-white/20'
+            <button
+              // href={heroContent.secondaryCta.href}
+              // target='_blank'
+              onClick={() => handleDownload()}
+              rel='noopener noreferrer'
+              className='inline-flex items-center justify-center gap-3 rounded-2xl bg-white/10 px-6 py-3 text-base font-semibold text-white ring-1 ring-white/30 transition-colors duration-300 hover:bg-white/20 cursor-pointer'
             >
               {heroContent.secondaryCta.label}
               <span aria-hidden>→</span>
-            </a>
+            </button>
           </div>
           <div className='mx-auto flex max-w-sm items-center gap-3 rounded-2xl bg-white/10 p-4 text-sm text-white/90 shadow-[0_20px_60px_rgba(3,105,161,0.35)] backdrop-blur md:mx-0'>
             <Image
