@@ -102,12 +102,6 @@ export const galleryItems = [
       "Kegiatan sosialisasi Ma'had bersama tokoh masyarakat untuk mempererat sinergi.",
     imageUrl: '/sosialisasi.jpeg',
   },
-  // {
-  //   title: "Halaqoh Qur'an",
-  //   description:
-  //     'Lingkaran halaqoh penuh kehangatan di bawah bimbingan ustadz.',
-  //   imageUrl: '/rutinan.jpeg',
-  // },
   {
     title: 'Ekstrakurikuler Silat',
     description:
