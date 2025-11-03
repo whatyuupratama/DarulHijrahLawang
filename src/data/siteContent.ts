@@ -168,7 +168,6 @@ export const registrationTimeline = [
 
 export const registrationLinks = {
   form: 'https://bit.ly/pendaftaran-santri-dh-lawang',
-  booklet: 'https://bit.ly/profil-dh-lawang',
 };
 
 export const faqItems = [

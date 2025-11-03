@@ -1,7 +1,8 @@
+'use client';
 import React from 'react';
 import { registrationLinks, heroContent } from '@/data/siteContent';
 import AnimatedReveal from '@/components/ui/AnimatedReveal';
-
+import { handleDownload } from '@/data/bookletUnduh';
 const CTASection: React.FC = () => {
   return (
     <section className='relative overflow-hidden bg-linear-to-br from-slate-950 via-slate-900 to-slate-950 py-20 text-white'>
@@ -34,14 +35,13 @@ const CTASection: React.FC = () => {
                 →
               </span>
             </a>
-            <a
-              href={registrationLinks.booklet}
+            <button
               className='inline-flex items-center justify-center gap-3 rounded-2xl bg-white/10 px-6 py-3 text-base font-semibold text-white ring-1 ring-white/20 transition duration-300 hover:bg-white/20'
-              target='_blank'
+              onClick={() => handleDownload()}
               rel='noreferrer'
             >
               Unduh Booklet
-            </a>
+            </button>
           </div>
         </AnimatedReveal>
         <AnimatedReveal className='relative w-full max-w-md' delay={120}>

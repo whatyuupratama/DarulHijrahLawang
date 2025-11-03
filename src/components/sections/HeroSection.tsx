@@ -4,13 +4,7 @@ import React from 'react';
 import { heroContent, siteBrand } from '@/data/siteContent';
 import AnimatedReveal from '@/components/ui/AnimatedReveal';
 import WorldMap from '@/components/ui/world-map';
-
-const handleDownload = () => {
-  const link = document.createElement('a');
-  link.href = '/brosur-ppdb-darul-hijrah-2026.pdf';
-  link.download = '/brosur-ppdb-darul-hijrah-2026.pdf';
-  link.click();
-};
+import { handleDownload } from '@/data/bookletUnduh';
 const mapConnections = [
   {
     start: { lat: -7.9181, lng: 112.708, label: 'Lawang' },
