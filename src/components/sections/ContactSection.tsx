@@ -102,14 +102,14 @@ const ContactSection: React.FC = () => {
                 Harap konfirmasi data santri setelah mengisi formulir
                 pendaftaran.
               </h3>
-              <p className='text-sm text-white/80 sm:text-base/relaxed'>
+              {/* <p className='text-sm text-white/80 sm:text-base/relaxed'>
                 Ust. Mada akan mengarsipkan data langsung di laptop resmi pondok
                 dan menghubungi kembali untuk verifikasi.
               </p>
               <p className='text-sm text-white/80 sm:text-base/relaxed'>
                 Simpan nomor resmi dan jangan bagikan data santri ke pihak
                 selain kontak ini.
-              </p>
+              </p> */}
             </div>
           </AnimatedReveal>
         </div>

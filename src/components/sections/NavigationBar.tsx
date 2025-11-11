@@ -75,7 +75,7 @@ const NavigationBar: React.FC = () => {
         <button
           type='button'
           onClick={() => setIsMenuOpen((prev) => !prev)}
-          className='inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200/70 text-slate-600 transition hover:border-sky-200 hover:text-sky-600 md:hidden'
+          className='inline-flex h-10 w-10 items-center justify-center rounded-full text-slate-600 transition hover:border-sky-200 hover:text-sky-600 md:hidden'
           aria-label={isMenuOpen ? 'Tutup menu navigasi' : 'Buka menu navigasi'}
           aria-expanded={isMenuOpen}
         >

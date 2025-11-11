@@ -16,7 +16,6 @@ const VisionMissionSection: React.FC = () => {
       <div className='container mx-auto px-4 sm:px-6'>
         <AnimatedReveal>
           <SectionHeading
-            eyebrow='Visi & Misi'
             title="Mulia bersama Al-Qur'an dan As-Sunnah"
             description="Arahan besar Ma'had Tahfidzul Qur'an Darul Hijrah Cabang Lawang untuk membentuk kader pemimpin Qur'ani."
             align='center'

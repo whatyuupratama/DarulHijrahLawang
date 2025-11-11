@@ -1,6 +1,6 @@
 export const siteBrand = {
   name: "Ma'had Tahfidzul Qur'an Darul Hijrah",
-  shortName: 'Darul Hijrah Lawang - Admin',
+  shortName: 'Darul Hijrah Lawang',
   slogan: "Cabang Lawang | Menebar Cahaya Qur'an Nusantara",
 };
 
@@ -147,7 +147,7 @@ export const galleryItems = [
     title: 'Halaqoh Santri',
     description:
       'Proses belajar santri di pondok bersama ustadz untuk memperdalam pemahaman Al-Qur’an dan ilmu keagamaan.',
-    imageUrl: '/santri.jpeg',
+    imageUrl: '/halaqoh.jpeg',
   },
 ];
 
