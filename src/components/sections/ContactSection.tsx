@@ -94,7 +94,7 @@ const ContactSection: React.FC = () => {
             delay={120}
           >
             <div className='absolute -right-12 top-10 h-24 w-24 rounded-full bg-white/20 blur-2xl' />
-            <div className='flex flex-col gap-4 justify-center items-start h-full text-start border'>
+            <div className='flex flex-col gap-4 justify-center items-start h-full text-start '>
               <p className='text-sm font-semibold uppercase tracking-[0.3em] text-white/75'>
                 Reminder
               </p>
