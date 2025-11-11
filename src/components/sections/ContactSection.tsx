@@ -94,22 +94,14 @@ const ContactSection: React.FC = () => {
             delay={120}
           >
             <div className='absolute -right-12 top-10 h-24 w-24 rounded-full bg-white/20 blur-2xl' />
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-4 justify-center items-start h-full text-start border'>
               <p className='text-sm font-semibold uppercase tracking-[0.3em] text-white/75'>
                 Reminder
               </p>
-              <h3 className='text-xl font-semibold leading-snug text-white sm:text-2xl capitalize'>
+              <h3 className='text-xl font-semibold leading-snug text-white sm:text-2xl capitalize  p-4 w-full'>
                 Harap konfirmasi data santri setelah mengisi formulir
                 pendaftaran.
               </h3>
-              {/* <p className='text-sm text-white/80 sm:text-base/relaxed'>
-                Ust. Mada akan mengarsipkan data langsung di laptop resmi pondok
-                dan menghubungi kembali untuk verifikasi.
-              </p>
-              <p className='text-sm text-white/80 sm:text-base/relaxed'>
-                Simpan nomor resmi dan jangan bagikan data santri ke pihak
-                selain kontak ini.
-              </p> */}
             </div>
           </AnimatedReveal>
         </div>
