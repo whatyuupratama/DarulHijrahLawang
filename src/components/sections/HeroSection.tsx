@@ -51,7 +51,7 @@ const HeroSection: React.FC = () => {
           />
         </div>
       </div>
-      <div className='container relative mx-auto flex min-h-[68vh] flex-col justify-center gap-12 px-4 py-20 sm:px-6 md:min-h-[80vh] md:flex-row md:items-center md:py-32'>
+      <div className='container relative mx-auto flex min-h-[68vh] flex-col justify-center gap-12 px-4 pt-32 pb-20 sm:px-6 md:min-h-[80vh] md:flex-row md:items-center md:pt-44 md:pb-32 lg:py-32'>
         <AnimatedReveal className='flex flex-1 flex-col gap-6 text-center text-white md:text-left'>
           <span className='mx-auto w-fit rounded-full bg-white/20 px-4 py-1 text-sm font-semibold uppercase tracking-wide text-white shadow-[0_0_30px_rgba(255,255,255,0.45)] backdrop-blur md:mx-0'>
             {heroContent.badge}
@@ -84,19 +84,21 @@ const HeroSection: React.FC = () => {
               <span aria-hidden>→</span>
             </button>
           </div>
-          <div className='mx-auto flex max-w-sm items-center gap-3 rounded-2xl bg-white/10 p-4 text-sm text-white/90 shadow-[0_20px_60px_rgba(3,105,161,0.35)] backdrop-blur md:mx-0'>
-            <Image
-              src='https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png'
-              alt={siteBrand.shortName}
-              width={40}
-              height={40}
-              className='h-10 w-10 animate-float rounded-full border border-white/40 bg-white/80 p-1'
-            />
-            <div>
-              <p className='font-medium'>{siteBrand.shortName}</p>
-              <p className='text-xs text-white/75'>{heroContent.highlight}</p>
+          <a href='https://wa.me/6287839673299' className='cursor-pointer'>
+            <div className='mx-auto flex max-w-sm items-center gap-3 rounded-2xl bg-white/10 p-4 text-sm text-white/90 shadow-[0_20px_60px_rgba(3,105,161,0.35)] backdrop-blur md:mx-0'>
+              <Image
+                src='https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png'
+                alt={siteBrand.shortName}
+                width={40}
+                height={40}
+                className='h-10 w-10 animate-float rounded-full border border-white/40 bg-white/80 p-1'
+              />
+              <div>
+                <p className='font-medium'>{siteBrand.shortName}</p>
+                <p className='text-xs text-white/75'>{heroContent.highlight}</p>
+              </div>
             </div>
-          </div>
+          </a>
         </AnimatedReveal>
         <AnimatedReveal
           className='relative flex flex-1 items-center justify-center'

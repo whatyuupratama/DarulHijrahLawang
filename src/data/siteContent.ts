@@ -1,11 +1,11 @@
 export const siteBrand = {
   name: "Ma'had Tahfidzul Qur'an Darul Hijrah",
-  shortName: 'Darul Hijrah Lawang',
+  shortName: 'Darul Hijrah Lawang - Admin',
   slogan: "Cabang Lawang | Menebar Cahaya Qur'an Nusantara",
 };
 
 export const heroContent = {
-  badge: 'Pendaftaran Santri Baru 2025/2026',
+  badge: 'Pendaftaran Santri Baru',
   title: "Cabang Lawang, Jaringan Qur'ani Nusantara",
   description:
     "Ma'had Tahfidzul Qur'an Darul Hijrah Cabang Lawang menghadirkan pembinaan tahfizh, adab, dan life skill yang terhubung dengan cabang-cabang lain di nusantara. Lingkungan asrama kami hangat, disiplin, dan siap membina kader pemimpin Qur'ani.",
@@ -18,7 +18,7 @@ export const heroContent = {
     href: '/brosur-ppdb-darul-hijrah-2026.pdf',
   },
   highlight:
-    'Konfirmasi langsung ke Ust. Mada untuk memastikan data pendaftaran diterima.',
+    'Konfirmasi langsung ke Admin untuk memastikan data pendaftaran diterima.',
 };
 
 export const programUnggulan = [
@@ -45,7 +45,7 @@ export const programUnggulan = [
   {
     title: 'Life Skill',
     description:
-      'Workshop kewirausahaan, public speaking, dan kemandirian sebagai bekal pengabdian santri.',
+      'Workshop kewirausahaan, peternakan, public speaking, dan kemandirian sebagai bekal pengabdian santri.',
   },
 ];
 
@@ -75,6 +75,11 @@ export const extracurricularList = [
     summary:
       'Mengasah stamina, strategi, serta kerja sama dalam suasana fun namun terarah.',
   },
+  {
+    name: 'Beternak',
+    summary:
+      'Kegiatan beternak untuk membentuk jiwa mandiri, tanggung jawab, dan kecintaan santri pada lingkungan.',
+  },
 ];
 
 export const halaqohHighlights = [
@@ -91,7 +96,7 @@ export const halaqohHighlights = [
   {
     title: 'Mentoring Personal',
     description:
-      'Pendampingan satu-satu bersama Ust. Mada dan tim untuk perkembangan spiritual dan akademik santri.',
+      'Pendampingan untuk perkembangan spiritual dan akademik santri.',
   },
 ];
 
@@ -120,6 +125,30 @@ export const galleryItems = [
       "Potret santri dan pembina Ma'had Tahfidzul Qur'an Darul Hijrah Cabang Lawang.",
     imageUrl: '/santri.jpeg',
   },
+  {
+    title: 'Kegiatan Sekolah Santri',
+    description:
+      'Aktivitas belajar para santri di lingkungan sekolah Ma’had yang penuh semangat.',
+    imageUrl: '/sekolah.jpeg',
+  },
+  {
+    title: 'Rihlah Rutin Santri',
+    description:
+      'Kegiatan rihlah (perjalanan) rutin santri sebagai sarana kebersamaan dan penguatan nilai dakwah.',
+    imageUrl: '/rihlah.jpeg',
+  },
+  {
+    title: 'Apel Pagi Santri',
+    description:
+      'Kegiatan apel pagi sebelum sekolah sebagai pembinaan disiplin dan kebersamaan santri.',
+    imageUrl: '/apel-pagi.jpeg',
+  },
+  {
+    title: 'Halaqoh Santri',
+    description:
+      'Proses belajar santri di pondok bersama ustadz untuk memperdalam pemahaman Al-Qur’an dan ilmu keagamaan.',
+    imageUrl: '/santri.jpeg',
+  },
 ];
 
 export const contactInfo = {
@@ -128,8 +157,9 @@ export const contactInfo = {
   phoneHref: 'tel:+62895624820033',
   whatsappHref:
     'https://wa.me/62895624820033?text=Assalamualaikum%20Ust.%20Mada%2C%20mohon%20konfirmasi%20pendaftaran%20santri',
-  email: 'pendaftaran@dhlawang.sch.id',
-  address: 'Jl Putri Malu No. 12, Lawang, Malang',
+  email: 'darulhijrahlawang@gmail.com',
+  address:
+    'Jl. Putri Malu, Perum VNR (AL), Ds. Ketindan, Kec. Lawang, Kab. Malang',
   officeHours: 'Senin - Sabtu, 08.00 - 16.00 WIB',
 };
 
@@ -137,7 +167,7 @@ export const registrationTimeline = [
   {
     phase: 'Mengisi Link Pendaftaran',
     detail:
-      'Lengkapi data santri dan wali melalui tautan resmi https://s.id/Formulir_Lawang25.',
+      'Lengkapi data santri dan wali melalui tautan resmi https://s.id/Formulir_Lawang25',
   },
   {
     phase: 'Membayar Biaya Pendaftaran',
@@ -152,7 +182,7 @@ export const registrationTimeline = [
   {
     phase: 'Konfirmasi Pembayaran',
     detail:
-      'Hubungi panitia melalui WhatsApp untuk verifikasi https://wa.me/6285784112926.',
+      'Hubungi panitia melalui WhatsApp untuk verifikasi https://wa.me/62895624820033',
   },
   {
     phase: 'Mengikuti Observasi Seleksi',
@@ -203,7 +233,7 @@ export const requirements = {
   intro:
     'Siapkan berkas berikut saat mengonfirmasi pendaftaran ke Ust. Mada agar proses administrasi lebih cepat.',
   items: [
-    'Formulir pendaftaran yang telah diisi lengkap.',
+    'Mengisi formulir pendaftaran',
     'Surat keterangan sehat jasmani dan rohani.',
     'Fotokopi ijazah atau surat keterangan lulus terbaru.',
     'Fotokopi akta kelahiran dan kartu keluarga.',

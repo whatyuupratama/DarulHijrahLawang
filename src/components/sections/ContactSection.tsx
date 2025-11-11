@@ -5,19 +5,19 @@ import AnimatedReveal from '@/components/ui/AnimatedReveal';
 
 const ContactSection: React.FC = () => {
   return (
-    <section className='bg-white py-20 scroll-mt-32' id='kontak'>
-      <div className='container mx-auto px-4 sm:px-6'>
-        <AnimatedReveal>
-          <SectionHeading
+    <section className='bg-white pb-20 scroll-mt-32' id='kontak'>
+      <div className='container mx-auto px-4 sm:px-6 '>
+        {/* <AnimatedReveal> */}
+        {/* <SectionHeading
             eyebrow='Kontak Resmi'
             title='Konfirmasi dan Konsultasi Bersama Ust. Mada'
             description='Semua jalur komunikasi diarahkan ke Ust. Mada agar informasi santri tersinkron langsung dengan laptop beliau.'
-          />
-        </AnimatedReveal>
+          /> */}
+        {/* </AnimatedReveal> */}
         <div className='mt-12 grid grid-cols-1 gap-8 md:grid-cols-[1.2fr_1fr]'>
           <AnimatedReveal className='w-full rounded-3xl border border-slate-200 bg-slate-50/60 p-6 shadow-[0_25px_60px_rgba(148,163,184,0.18)] sm:p-8'>
             <h3 className='text-lg font-semibold text-slate-900'>
-              Hubungi Langsung
+              Kontak Resmi
             </h3>
             <p className='mt-3 text-sm text-slate-600'>
               Kirimkan bukti formulir dan konfirmasi jadwal wawancara.
@@ -98,8 +98,9 @@ const ContactSection: React.FC = () => {
               <p className='text-sm font-semibold uppercase tracking-[0.3em] text-white/75'>
                 Reminder
               </p>
-              <h3 className='text-xl font-semibold leading-snug text-white sm:text-2xl'>
-                Mohon konfirmasi data santri setelah mengisi formulir.
+              <h3 className='text-xl font-semibold leading-snug text-white sm:text-2xl capitalize'>
+                Harap konfirmasi data santri setelah mengisi formulir
+                pendaftaran.
               </h3>
               <p className='text-sm text-white/80 sm:text-base/relaxed'>
                 Ust. Mada akan mengarsipkan data langsung di laptop resmi pondok

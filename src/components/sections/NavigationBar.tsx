@@ -108,12 +108,6 @@ const NavigationBar: React.FC = () => {
             </a>
           ))}
         </nav>
-        <a
-          href='https://wa.me/62895624820033?text=Assalamualaikum%20Ust.%20Mada%2C%20kami%20ingin%20mengatur%20jadwal%20kunjungan'
-          className='hidden rounded-2xl bg-sky-500 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_16px_35px_rgba(14,165,233,0.35)] transition hover:-translate-y-0.5 hover:bg-sky-400 md:inline-flex'
-        >
-          Hubungi Ust. Mada
-        </a>
       </div>
       <AnimatePresence>
         {isMenuOpen ? (
@@ -185,15 +179,6 @@ const NavigationBar: React.FC = () => {
                     <span className='text-xs text-slate-400'>→</span>
                   </a>
                 ))}
-              </div>
-              <div className='px-5 pb-6 pt-2'>
-                <a
-                  href='https://wa.me/62895624820033?text=Assalamualaikum%20Ust.%20Mada%2C%20kami%20ingin%20mengatur%20jadwal%20kunjungan'
-                  className='inline-flex w-full items-center justify-center rounded-2xl bg-linear-to-r from-sky-500 to-sky-400 px-4 py-3 text-sm font-semibold text-white shadow-[0_18px_35px_rgba(14,165,233,0.35)] transition hover:brightness-105'
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Hubungi Ust. Mada
-                </a>
               </div>
             </motion.nav>
           </motion.div>

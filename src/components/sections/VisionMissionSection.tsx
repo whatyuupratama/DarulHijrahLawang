@@ -42,9 +42,9 @@ const VisionMissionSection: React.FC = () => {
                 <p className='text-sm uppercase tracking-[0.35em] text-sky-500'>
                   Visi
                 </p>
-                <h3 className='mt-1 text-xl font-semibold text-slate-900'>
+                {/* <h3 className='mt-1 text-xl font-semibold text-slate-900'>
                   Cahaya Qur&apos;an untuk Pemimpin Masa Depan
-                </h3>
+                </h3> */}
               </div>
             </div>
             <p className='mt-6 text-base text-slate-700'>
@@ -55,9 +55,9 @@ const VisionMissionSection: React.FC = () => {
             <p className='text-sm uppercase tracking-[0.35em] text-slate-400'>
               Misi Ma&apos;had
             </p>
-            <h3 className='mt-2 text-xl font-semibold text-slate-900'>
+            {/* <h3 className='mt-2 text-xl font-semibold text-slate-900'>
               Langkah Nyata Pembinaan Santri
-            </h3>
+            </h3> */}
             <ul className='mt-6 space-y-4 text-sm text-slate-600'>
               {visionMission.missions.map((mission, idx) => (
                 <li key={mission} className='flex gap-3'>
@@ -74,7 +74,7 @@ const VisionMissionSection: React.FC = () => {
                       />
                     </svg>
                   </span>
-                  <span>{mission}</span>
+                  <span className='flex items-center'>{mission}</span>
                 </li>
               ))}
             </ul>

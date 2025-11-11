@@ -18,7 +18,7 @@ const RequirementsSection: React.FC = () => {
             {requirements.items.map((item) => (
               <li
                 key={item}
-                className='flex items-start gap-3 rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-[0_12px_35px_rgba(148,163,184,0.16)]'
+                className='flex items-center gap-3 rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-[0_12px_35px_rgba(148,163,184,0.16)]'
               >
                 <span className='mt-1 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-600'>
                   <svg
@@ -33,10 +33,12 @@ const RequirementsSection: React.FC = () => {
                     />
                   </svg>
                 </span>
-                <span>{item}</span>
+                <span className='capitalize'>{item}</span>
               </li>
             ))}
           </ul>
+
+          {/* RESPONSIFFFFF */}
         </AnimatedReveal>
         <AnimatedReveal delay={140} className='relative'>
           <div className='relative overflow-hidden rounded-4xl border border-white/50 bg-linear-to-b from-white/70 to-white/20 shadow-[0_40px_90px_rgba(148,163,184,0.28)] backdrop-blur'>
