@@ -11,7 +11,7 @@ export const heroContent = {
     "Ma'had Tahfidzul Qur'an Darul Hijrah Cabang Lawang menghadirkan pembinaan tahfizh, adab, dan life skill yang terhubung dengan cabang-cabang lain di nusantara. Lingkungan asrama kami hangat, disiplin, dan siap membina kader pemimpin Qur'ani.",
   primaryCta: {
     label: 'Daftar Sekarang',
-    href: 'https://wa.me/62895624820033?text=Assalamualaikum%20Ust.%20Mada%2C%20saya%20ingin%20mendaftar%20santri%20baru',
+    href: 'https://wa.me/6287839673299',
   },
   secondaryCta: {
     label: 'Unduh Booklet',
@@ -153,16 +153,14 @@ export const galleryItems = [
 
 export const contactInfo = {
   ustName: 'Ust. Mada',
-  phone: '+62 895-6248-20033',
-  phoneHref: 'tel:+62895624820033',
-  whatsappHref:
-    'https://wa.me/62895624820033?text=Assalamualaikum%20Ust.%20Mada%2C%20mohon%20konfirmasi%20pendaftaran%20santri',
+  phone: '+62 878-3967-3299',
+  phoneHref: 'tel:+6287839673299',
+  whatsappHref: 'https://wa.me/6287839673299',
   email: 'darulhijrahlawang@gmail.com',
   address:
     'Jl. Putri Malu, Perum VNR (AL), Ds. Ketindan, Kec. Lawang, Kab. Malang',
   officeHours: 'Senin - Sabtu, 08.00 - 16.00 WIB',
 };
-
 export const registrationTimeline = [
   {
     phase: 'Mengisi Link Pendaftaran',
@@ -182,7 +180,7 @@ export const registrationTimeline = [
   {
     phase: 'Konfirmasi Pembayaran',
     detail:
-      'Hubungi panitia melalui WhatsApp untuk verifikasi https://wa.me/62895624820033',
+      'Hubungi panitia melalui WhatsApp untuk verifikasi https://wa.me/6287839673299',
   },
   {
     phase: 'Mengikuti Observasi Seleksi',
