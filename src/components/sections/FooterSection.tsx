@@ -25,7 +25,7 @@ const FooterSection: React.FC = () => {
         </div>
         <div className='overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_25px_60px_rgba(15,23,42,0.35)]'>
           <iframe
-            title='Lokasi Pondok Tahfizh Darul Hikmah Lawang'
+            title='Lokasi Pondok Tahfizh Darul Hijrah Lawang'
             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.544978401728!2d112.66947517500552!3d-7.83788559218335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d581900fe869%3A0xa8957f2b06735acf!2sPesantren%20Tahfidz%20Taruna%20Darul%20Hijrah!5e0!3m2!1sid!2sid!4v1763398665413!5m2!1sid!2sid'
             width='100%'
             height='260'
