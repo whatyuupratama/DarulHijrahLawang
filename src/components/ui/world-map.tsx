@@ -20,14 +20,19 @@ export default function WorldMap({
   dotColor = 'rgba(255, 255, 255, 0.6)',
 }: MapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
-  const map = new DottedMap({ height: 100, grid: 'diagonal' });
 
-  const svgMap = map.getSVG({
-    radius: 0.22,
-    color: dotColor,
-    shape: 'circle',
-    backgroundColor: 'transparent',
-  });
+  const map = useMemo(() => new DottedMap({ height: 100, grid: 'diagonal' }), []);
+
+  const svgMap = useMemo(
+    () =>
+      map.getSVG({
+        radius: 0.22,
+        color: dotColor,
+        shape: 'circle',
+        backgroundColor: 'transparent',
+      }),
+    [map, dotColor]
+  );
 
   const projectPoint = (lat: number, lng: number) => {
     const x = (lng + 180) * (800 / 360);
@@ -57,7 +62,7 @@ export default function WorldMap({
         const key = `${point.lat}-${point.lng}`;
         if (!unique.has(key)) {
           const coords = projectPoint(point.lat, point.lng);
-          unique.set(key, { ...coords, label: point.label! });
+          unique.set(key, { ...coords, label: point.label });
         }
       });
     });

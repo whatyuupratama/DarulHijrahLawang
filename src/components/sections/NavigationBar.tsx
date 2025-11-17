@@ -4,16 +4,8 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 
-import { siteBrand } from '@/data/siteContent';
-
-const navItems = [
-  { label: 'Visi & Misi', href: '#visi' },
-  { label: 'Program', href: '#program' },
-  { label: 'Ekstrakurikuler', href: '#ekstrakurikuler' },
-  { label: 'Pendaftaran', href: '#pendaftaran' },
-  { label: 'Syarat', href: '#persyaratan' },
-  { label: 'Kontak', href: '#kontak' },
-];
+import { siteBrand, navItems } from '@/data/siteContent';
+import { IoClose } from 'react-icons/io5';
 
 const NavigationBar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -153,17 +145,7 @@ const NavigationBar: React.FC = () => {
                   aria-label='Tutup menu navigasi'
                 >
                   <span className='sr-only'>Tutup</span>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    viewBox='0 0 24 24'
-                    className='h-4 w-4'
-                    aria-hidden
-                  >
-                    <path
-                      fill='currentColor'
-                      d='M18.3 5.71 12 12l6.3 6.29-1.41 1.42L10.59 13.4l-6.3 6.3-1.41-1.42L9.17 12 2.88 5.71 4.29 4.29l6.3 6.3 6.29-6.3z'
-                    />
-                  </svg>
+                  <IoClose className='h-5 w-5' aria-hidden />
                 </button>
               </div>
               <div className='h-px w-full bg-slate-200/80' />

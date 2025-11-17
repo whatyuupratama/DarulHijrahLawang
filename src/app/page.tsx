@@ -5,7 +5,6 @@ import HalaqohSection from '@/components/sections/HalaqohSection';
 import ExtracurricularSection from '@/components/sections/ExtracurricularSection';
 import GallerySection from '@/components/sections/GallerySection';
 import TimelineSection from '@/components/sections/TimelineSection';
-import CTASection from '@/components/sections/CTASection';
 import FAQSection from '@/components/sections/FAQSection';
 import ContactSection from '@/components/sections/ContactSection';
 import FooterSection from '@/components/sections/FooterSection';
@@ -24,7 +23,6 @@ export default function HomePage() {
       <GallerySection />
       <TimelineSection />
       <RequirementsSection />
-      {/* <CTASection /> */}
       <FAQSection />
       <ContactSection />
       <FooterSection />

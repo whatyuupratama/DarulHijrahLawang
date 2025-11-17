@@ -1,55 +1,38 @@
 'use client';
 import Image from 'next/image';
-import React from 'react';
-import { heroContent, siteBrand } from '@/data/siteContent';
+import React, { useEffect, useState } from 'react';
+import dynamic from 'next/dynamic';
+import { heroContent, siteBrand, heroConnections } from '@/data/siteContent';
 import AnimatedReveal from '@/components/ui/AnimatedReveal';
-import WorldMap from '@/components/ui/world-map';
 import { handleDownload } from '@/data/bookletUnduh';
-const mapConnections = [
-  {
-    start: { lat: -7.9181, lng: 112.708, label: 'Lawang' },
-    end: { lat: -6.2088, lng: 106.8456, label: 'Jakarta' },
-  },
-  {
-    start: { lat: -7.9181, lng: 112.708 },
-    end: { lat: -6.9147, lng: 107.6098, label: 'Bandung' },
-  },
-  {
-    start: { lat: -7.9181, lng: 112.708 },
-    end: { lat: -7.2575, lng: 112.7521, label: 'Surabaya' },
-  },
-  {
-    start: { lat: -7.9181, lng: 112.708 },
-    end: { lat: -6.982, lng: 110.4147, label: 'Semarang' },
-  },
-  {
-    start: { lat: -7.9181, lng: 112.708 },
-    end: { lat: -3.3186, lng: 114.5926, label: 'Kalimantan' },
-  },
-  {
-    start: { lat: -7.9181, lng: 112.708 },
-    end: { lat: -5.1477, lng: 119.4327, label: 'Makassar' },
-  },
-  {
-    start: { lat: -7.9181, lng: 112.708 },
-    end: { lat: 3.5952, lng: 98.6722, label: 'Medan' },
-  },
-];
 
+const WorldMap = dynamic(() => import('@/components/ui/world-map'), {
+  ssr: false,
+  loading: () => null,
+});
 const HeroSection: React.FC = () => {
+  const [showMap, setShowMap] = useState(false);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => setShowMap(true), 300);
+    return () => window.clearTimeout(timer);
+  }, []);
+
   return (
     <section className='relative overflow-hidden bg-linear-to-br from-sky-500 via-sky-400 to-sky-600'>
       <div className='absolute inset-0'>
         <div className='h-full w-full bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.45),transparent_60%)]' />
       </div>
       <div className='pointer-events-none absolute inset-0 hidden opacity-40 mix-blend-screen md:block'>
-        <div className='absolute -top-[28%] left-1/2 h-[130%] w-[140%] -translate-x-1/2'>
-          <WorldMap
-            dots={mapConnections}
-            lineColor='rgba(226, 243, 255, 0.85)'
-            dotColor='rgba(255,255,255,0.7)'
-          />
-        </div>
+        {showMap && (
+          <div className='absolute -top-[28%] left-1/2 h-[130%] w-[140%] -translate-x-1/2'>
+            <WorldMap
+              dots={heroConnections}
+              lineColor='rgba(226, 243, 255, 0.85)'
+              dotColor='rgba(255,255,255,0.7)'
+            />
+          </div>
+        )}
       </div>
       <div className='container relative mx-auto flex min-h-[68vh] flex-col justify-center gap-12 px-4 pt-32 pb-20 sm:px-6 md:min-h-[80vh] md:flex-row md:items-center md:pt-44 md:pb-32 lg:py-32'>
         <AnimatedReveal className='flex flex-1 flex-col gap-6 text-center text-white md:text-left'>
@@ -74,8 +57,6 @@ const HeroSection: React.FC = () => {
               </span>
             </a>
             <button
-              // href={heroContent.secondaryCta.href}
-              // target='_blank'
               onClick={() => handleDownload()}
               rel='noopener noreferrer'
               className='inline-flex items-center justify-center gap-3 rounded-2xl bg-white/10 px-6 py-3 text-base font-semibold text-white ring-1 ring-white/30 transition-colors duration-300 hover:bg-white/20 cursor-pointer'
@@ -91,6 +72,7 @@ const HeroSection: React.FC = () => {
                 alt={siteBrand.shortName}
                 width={40}
                 height={40}
+                loading='lazy'
                 className='h-10 w-10 animate-float rounded-full border border-white/40 bg-white/80 p-1'
               />
               <div>
@@ -112,6 +94,8 @@ const HeroSection: React.FC = () => {
               alt='Santri belajar di DH Lawang'
               fill
               className='rounded-4xl object-cover shadow-[0_40px_100px_rgba(1,87,155,0.45)]'
+              sizes='(max-width: 768px) 100vw, (max-width: 1024px) 55vw, 480px'
+              fetchPriority='high'
               priority
             />
           </div>

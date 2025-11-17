@@ -29,6 +29,7 @@ const GallerySection: React.FC = () => {
                     src={item.imageUrl}
                     alt={item.title}
                     fill
+                    sizes='(max-width: 1024px) 100vw, 50vw'
                     className='object-cover transition duration-1200 group-hover:scale-105'
                   />
                   <div className='absolute inset-0 bg-linear-to-t from-slate-950/60 via-slate-900/0' />

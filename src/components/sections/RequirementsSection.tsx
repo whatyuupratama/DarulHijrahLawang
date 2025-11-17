@@ -3,6 +3,7 @@ import React from 'react';
 import AnimatedReveal from '@/components/ui/AnimatedReveal';
 import SectionHeading from '@/components/ui/SectionHeading';
 import { requirements } from '@/data/siteContent';
+import { FiCheck } from 'react-icons/fi';
 
 const RequirementsSection: React.FC = () => {
   return (
@@ -21,24 +22,13 @@ const RequirementsSection: React.FC = () => {
                 className='flex items-center gap-3 rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-[0_12px_35px_rgba(148,163,184,0.16)]'
               >
                 <span className='mt-1 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-600'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    viewBox='0 0 24 24'
-                    className='h-4 w-4'
-                    aria-hidden
-                  >
-                    <path
-                      fill='currentColor'
-                      d='M21 7L9 19l-5.5-5.5l1.41-1.41L9 16.17L19.59 5.59z'
-                    />
-                  </svg>
+                  <FiCheck className='h-4 w-4' aria-hidden />
                 </span>
                 <span className='capitalize'>{item}</span>
               </li>
             ))}
           </ul>
 
-          {/* RESPONSIFFFFF */}
         </AnimatedReveal>
         <AnimatedReveal delay={140} className='relative'>
           <div className='relative overflow-hidden rounded-4xl border border-white/50 bg-linear-to-b from-white/70 to-white/20 shadow-[0_40px_90px_rgba(148,163,184,0.28)] backdrop-blur'>
@@ -47,8 +37,9 @@ const RequirementsSection: React.FC = () => {
               alt="Santri Ma'had Tahfidzul Qur'an Darul Hijrah Cabang Lawang"
               width={960}
               height={720}
+              sizes='(max-width: 1024px) 100vw, 50vw'
+              loading='lazy'
               className='h-full w-full object-cover'
-              priority={true}
             />
             <div className='absolute inset-x-0 bottom-0 rounded-t-[28px] bg-linear-to-t from-slate-950/75 via-slate-900/40 to-transparent p-6 text-white'>
               <p className='text-xs uppercase tracking-[0.35em] text-slate-100/80'>

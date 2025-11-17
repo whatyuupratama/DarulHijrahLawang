@@ -4,6 +4,48 @@ export const siteBrand = {
   slogan: "Cabang Lawang | Menebar Cahaya Qur'an Nusantara",
 };
 
+export const navItems = [
+  { label: 'Visi & Misi', href: '#visi' },
+  { label: 'Program', href: '#program' },
+  { label: 'Ekstrakurikuler', href: '#ekstrakurikuler' },
+  { label: 'Pendaftaran', href: '#pendaftaran' },
+  { label: 'Syarat', href: '#persyaratan' },
+  { label: 'Kontak', href: '#kontak' },
+];
+
+export const missionIconKeys = ['clock', 'check', 'plus', 'growth'];
+
+export const heroConnections = [
+  {
+    start: { lat: -7.9181, lng: 112.708, label: 'Lawang' },
+    end: { lat: -6.2088, lng: 106.8456, label: 'Jakarta' },
+  },
+  {
+    start: { lat: -7.9181, lng: 112.708 },
+    end: { lat: -6.9147, lng: 107.6098, label: 'Bandung' },
+  },
+  {
+    start: { lat: -7.9181, lng: 112.708 },
+    end: { lat: -7.2575, lng: 112.7521, label: 'Surabaya' },
+  },
+  {
+    start: { lat: -7.9181, lng: 112.708 },
+    end: { lat: -6.982, lng: 110.4147, label: 'Semarang' },
+  },
+  {
+    start: { lat: -7.9181, lng: 112.708 },
+    end: { lat: -3.3186, lng: 114.5926, label: 'Kalimantan' },
+  },
+  {
+    start: { lat: -7.9181, lng: 112.708 },
+    end: { lat: -5.1477, lng: 119.4327, label: 'Makassar' },
+  },
+  {
+    start: { lat: -7.9181, lng: 112.708 },
+    end: { lat: 3.5952, lng: 98.6722, label: 'Medan' },
+  },
+];
+
 export const heroContent = {
   badge: 'Pendaftaran Santri Baru',
   title: "Cabang Lawang, Jaringan Qur'ani Nusantara",
