@@ -26,7 +26,7 @@ const FooterSection: React.FC = () => {
         <div className='overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_25px_60px_rgba(15,23,42,0.35)]'>
           <iframe
             title='Lokasi Pondok Tahfizh Darul Hikmah Lawang'
-            src='https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3952.571849482974!2d112.6741137616656!3d-7.835055427807669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sJl. Putri Malu%2C Perum VNR (AL)%2C Ds. Ketindan%2C Kec. Lawang%2C Kab. Malang!5e0!3m2!1sid!2sid!4v1762843079275!5m2!1sid!2sid'
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.544978401728!2d112.66947517500552!3d-7.83788559218335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d581900fe869%3A0xa8957f2b06735acf!2sPesantren%20Tahfidz%20Taruna%20Darul%20Hijrah!5e0!3m2!1sid!2sid!4v1763398665413!5m2!1sid!2sid'
             width='100%'
             height='260'
             loading='lazy'
