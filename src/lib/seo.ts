@@ -1,6 +1,6 @@
-export const siteUrl = 'https://dhlawang.or.id';
+export const siteUrl = 'https://darulhijrahlawang.com';
 
 export const seoDefaults = {
-  siteName: 'Pondok Tahfizh Darul Hijra Lawang',
+  siteName: 'Pondok Tahfizh Darul Hijrah Lawang',
   locale: 'id_ID',
 };
