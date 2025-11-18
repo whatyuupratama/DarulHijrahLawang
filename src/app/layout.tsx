@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   publisher: 'Pondok Tahfizh Darul Hijrah Lawang',
   category: 'education',
   alternates: {
-    canonical: '/',
+    canonical: 'https://darulhijrahlawang.com',
     languages: {
       'id-ID': '/',
     },
@@ -82,8 +82,18 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico', rel: 'icon', sizes: '32x32', type: 'image/x-icon' },
-      { url: '/favicon.ico', rel: 'icon', sizes: '16x16', type: 'image/x-icon' },
+      {
+        url: '/favicon.ico',
+        rel: 'icon',
+        sizes: '32x32',
+        type: 'image/x-icon',
+      },
+      {
+        url: '/favicon.ico',
+        rel: 'icon',
+        sizes: '16x16',
+        type: 'image/x-icon',
+      },
     ],
     shortcut: [{ url: '/favicon.ico' }],
     apple: [{ url: '/logo.png', rel: 'apple-touch-icon', sizes: '180x180' }],
