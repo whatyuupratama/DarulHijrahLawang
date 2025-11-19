@@ -191,6 +191,18 @@ export const galleryItems = [
       'Proses belajar santri di pondok bersama ustadz untuk memperdalam pemahaman Al-Qur’an dan ilmu keagamaan.',
     imageUrl: '/halaqoh.jpeg',
   },
+  {
+    title: 'Beladiri Tapak Suci',
+    description:
+      'Kegiatan apel pagi sebelum sekolah sebagai pembinaan disiplin dan kebersamaan santri.',
+    imageUrl: '/tapaksuci.jpg',
+  },
+  {
+    title: 'Beternak dan Grand Launching "Hijrah Etawa Park"',
+    description:
+      'Peresmian program agribisnis pesantren melalui peternakan kambing Etawa sebagai pembelajaran dan pengembangan unit usaha santri.',
+    imageUrl: '/hijrahetawafarm.jpg',
+  },
 ];
 
 export const contactInfo = {
