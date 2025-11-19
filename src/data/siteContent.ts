@@ -194,7 +194,7 @@ export const galleryItems = [
   {
     title: 'Beladiri Tapak Suci',
     description:
-      'Kegiatan apel pagi sebelum sekolah sebagai pembinaan disiplin dan kebersamaan santri.',
+      'Latihan bela diri Tapak Suci untuk membentuk kedisiplinan, keberanian, dan kekuatan fisik santri.',
     imageUrl: '/tapaksuci.jpg',
   },
   {
