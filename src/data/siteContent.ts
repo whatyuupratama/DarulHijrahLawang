@@ -198,7 +198,7 @@ export const galleryItems = [
     imageUrl: '/tapaksuci.jpg',
   },
   {
-    title: 'Beternak dan Grand Launching "Hijrah Etawa Park"',
+    title: 'Hijrah Etawa Farm',
     description:
       'Peresmian program agribisnis pesantren melalui peternakan kambing Etawa sebagai pembelajaran dan pengembangan unit usaha santri.',
     imageUrl: '/hijrahetawafarm.jpg',
