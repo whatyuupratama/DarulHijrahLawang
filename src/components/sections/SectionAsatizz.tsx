@@ -22,7 +22,7 @@ const SectionAsatizz: React.FC = () => {
           <SectionHeading
             eyebrow='Para Asatidz'
             title='Para Asatidz Dipesantren'
-            description='Kenali para pembina yang mendampingi santri dalam halaqoh, kedisiplinan, dan manajemen pesantren.'
+            description='Kenali para asatidz yang mendampingi santri dalam halaqoh, kedisiplinan, dan manajemen pesantren.'
           />
         </AnimatedReveal>
         <div className='mt-12 grid gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-4'>
