@@ -10,6 +10,8 @@ import ContactSection from '@/components/sections/ContactSection';
 import FooterSection from '@/components/sections/FooterSection';
 import VisionMissionSection from '@/components/sections/VisionMissionSection';
 import RequirementsSection from '@/components/sections/RequirementsSection';
+// import SectionAsatiz from '@/components/sections/SectionAsatiz';
+import SectionAsatizz from '@/components/sections/SectionAsatizz';
 
 export default function HomePage() {
   return (
@@ -19,6 +21,8 @@ export default function HomePage() {
       <VisionMissionSection />
       <ProgramsSection />
       <HalaqohSection />
+      {/* <SectionAsatiz /> */}
+      <SectionAsatizz />
       <ExtracurricularSection />
       <GallerySection />
       <TimelineSection />

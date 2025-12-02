@@ -142,6 +142,29 @@ export const halaqohHighlights = [
   },
 ];
 
+export const asatidzList = [
+  {
+    name: 'Budi Santoso, M.Pd',
+    role: "Kepala Ma'had Tahfidzul Qur'an Darul Hijrah Cabang Lawang",
+    imageUrl: '/asatidz-budi.png',
+  },
+  {
+    name: 'Fairuz Irani Ibrahim',
+    role: 'Bagian Kesantrian',
+    imageUrl: '/asatidz-fairuz.png',
+  },
+  {
+    name: 'Hafs Taqiyuddin Amanillah',
+    role: "Mas'ul Tahfidz",
+    imageUrl: '/asatidz-hafs.png',
+  },
+  {
+    name: 'Muhammad Dardiri',
+    role: 'Bendahara dan Kepesantrenan',
+    imageUrl: '/asatidz-muhammad.png',
+  },
+];
+
 export const galleryItems = [
   {
     title: 'Sosialisasi Warga',
