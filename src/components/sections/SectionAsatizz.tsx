@@ -53,7 +53,6 @@ const SectionAsatizz: React.FC = () => {
                 </div>
               </article>
             </AnimatedReveal>
-            // <div key={index}>haii</div>
           ))}
         </div>
       </div>
